@@ -1,0 +1,467 @@
+/*!
+ * General Style page
+ *
+ * Dermasalud.es
+ *
+ */
+ /*FONTS*/
+
+ @font-face { font-family: "Colaborative"; src: url("./fonts/ColabLig.otf"); 
+}
+
+body{
+
+	font-family: Colaborative;
+}
+
+/*END FONTS*/
+.navbarcontainer{
+	vertical-align: bottom;
+	width: inherit;
+	height: 100px;
+	background-color: blue;
+
+}
+.over_navbar{
+	/*vertical-align: center;*/
+	width: 100%;
+	height: 100px;
+
+	background-color: rgba(95, 161, 192, 0.61);
+	background: url(../img/fondo_logo.jpg);
+	background-size: 100% auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+	z-index: 100;
+
+}
+
+.abs_position{	position: absolute;}
+
+.nav_correct{	margin-bottom: 0px;}
+
+.img_fondo{
+	top: 0;
+	left: 0;
+
+	height: 400px;
+	background: url(../img/dermatologistsalary1158mod.jpg);
+	background-size: cover;
+	/*background-repeat: fixed;*/
+	/*width: inherit;*/
+	/*height: inherit;*/
+	/*max-width: 100%;*/
+	padding-top: 0px;
+	padding-bottom: 0px;
+	/*background-image: url("/img/dermatologistsalary1158mod.jpg");*/
+}
+
+.img_fondo_info{
+	top: 0;
+	left: 0;
+	height: 400px;
+	background: url(../img/sample3.jpg);
+	/*background-size: 100% 600px;*/
+	background-size: cover;
+	/*background-repeat: fixed;*/
+	/*width: inherit;*/
+	/*height: inherit;*/
+	max-width: 100%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.bottom-align{
+	position: relative;
+	bottom: 0px;
+	padding-top: 70px;
+	font-family: arial;
+	font-size: 40pt;
+	
+	font-weight: 400;
+
+	background-color:white;
+	margin-top: 20px;
+	margin-left: 10px;
+	/*vertical-align: left;*/
+	/*	padding-bottom: 20px; */
+}
+
+/*
+.img_jumbo{
+
+	z-index: -100;
+	width: 100%;
+	height: 
+	
+	}*/
+
+.rotulo1{
+	padding-top: 70px;
+	/*font-family: arial;*/
+	font-size: 56pt;
+	font-weight: 700;
+	/*vertical-align: left;*/
+	padding-bottom: 20px;
+}
+
+.rotulo2{
+	position: relative;
+	top: -75px;
+	/*	font-family: arial thin;*/
+	font-size: 56pt;
+	font-weight: 700;
+	padding-bottom: 20px;
+}
+
+.rotulo_texto1{
+	position: relative;
+	font-family: Colaborative;
+	top: -30px;
+	font-size: 18pt;
+	font-weight: 300;
+
+}
+
+.rotulo_texto2{
+	position: relative;
+	font-family: Colaborative;
+	top: -50px;
+	font-size: 18pt;
+	font-weight: 300;
+	/*vertical-align: left;*/
+}
+
+.extra-padding-4d{	padding: 10px 20px 10px 20px;}
+
+.color-container{	background-color: #81ABC1;}
+
+.color-icon{
+	/*position: relative;*/
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+/*	left: 50%;
+right: -45px;*/
+	top:45px;
+	width: 90px;
+	height: 90px;
+
+}
+.over-color-icon{
+	position: relative;
+	z-index: 100;
+}
+
+  .disappear{
+    display: none;
+  }
+  .appear{
+    display: block;
+  }
+
+
+#bloque_expositor.expositor_fondo{
+	top: 0;
+	left: 0;
+	/*height: 400px;*/
+	background-color: rgba(202,210,217,1);
+	background-size: 100% 600px;
+	/*background-repeat: fixed;*/
+	padding-top: 15px;
+	margin-top: 30px;
+	/*width: inherit;*/
+	/*height: inherit;*/
+	width: 100%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	/*background-image: url("/img/dermatologistsalary1158mod.jpg");*/
+}
+
+
+
+
+.expositor_fondo{
+
+		top: 0;
+	left: 0;
+	/*height: 400px;*/
+	
+	background-color: rgba(202,210,217,1);
+	background-size: 100% 600px;
+	/*background-repeat: fixed;*/
+	padding-top: 15px;
+	margin-top: 0px;
+	/*width: inherit;*/
+	/*height: inherit;*/
+	width: 100%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+
+#contenedor_imagenes.expositor_fondo{
+
+	top: 0px;
+	left: 0;
+	/*height: 400px;*/
+	
+	background-color: rgba(202,210,217,1);
+	background-size: 100% 600px;
+	/*background-repeat: fixed;*/
+	padding-top: 15px;
+	/*margin-top: 50px;*/
+	/*width: inherit;*/
+	/*height: inherit;*/
+	width: 100%;
+	padding-top: 10px;
+	padding-left: 15px;
+	padding-bottom: 0px;
+
+}
+
+#rotulo_menciones.expositor_fondo{
+
+	top: 30px;
+	left: 0;
+	/*height: 400px;*/
+	
+	background-color: rgba(202,210,217,1);
+	background-size: 100% 600px;
+	/*background-repeat: fixed;*/
+
+	margin-top: 50px;
+	/*width: inherit;*/
+	/*height: inherit;*/
+	width: 400px;
+	padding-top: 10px;
+	padding-left: 40px;
+	padding-bottom: 10px;
+
+}
+
+.expositor_pie_pagina{
+	top: 0;
+	left: 0;
+	/*height: 400px;*/
+	background-color: rgba(225,232,237,1);
+	background-size: 100% 600px;
+	/*background-repeat: fixed;*/
+	padding-top: 15px;
+	margin-top: 50px;
+	/*width: inherit;*/
+	/*height: inherit;*/
+	width: 100%;
+	padding-top: 0px;
+	padding-bottom: 0px;
+
+	/*background-image: url("/img/dermatologistsalary1158mod.jpg");*/
+}
+
+div#image_block_4{
+	margin-top: 30px;
+}
+
+.remark-cite{
+
+	background-color:rgba(180,180,230,1);
+	position: relative;
+	display: block;
+	
+	width: 95%;
+	font-size: 18pt;
+	margin-top: 20px;
+	margin-left: 10px;
+}
+
+
+/*Separador para poner en la izquierda*/
+.mycontent-left {
+	border-right: 1px dashed #333;
+}
+
+
+.image-transition{
+	-webkit-transition: opacity 1s ease-in-out;
+	-moz-transition: opacity 1s ease-in-out;
+	-o-transition: opacity 1s ease-in-out;
+	transition: opacity 1s ease-in-out;
+
+}
+
+hr { display: block; height: 1px;
+	border: 0; border-top: 1px solid #ccc;
+	margin: 1em 0; padding: 0; }
+
+.tele-font{	font-size: 30pt;}
+
+#map-canvas{
+	width: 100%;
+	height: 500px;
+
+}
+
+
+
+
+
+.img-div-3{
+
+	width: 100%;
+	height: 200px;
+}
+
+/*---------------*/
+/***** EFFECT - prueba Carmen *****/
+/*---------------*/
+
+figure.effect {
+	background: #81ABC1;
+	color: #FFF;
+}
+
+figure.effect img {
+	width: -webkit-calc(100% + 20px);
+	width: calc(100% + 20px);
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(-10px,0,0);
+	transform: translate3d(-10px,0,0);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+figure.effect:hover img {
+	opacity: 0.2;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect figcaption {
+	text-align: left;
+}
+
+figure.effect h3 {
+	position: relative;
+	overflow: hidden;
+	padding-bottom: 20px;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+
+figure.effect:hover h3 {
+	opacity: 1;
+}
+
+figure.effect h3::after {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background: #fff;
+	content: '';
+	-webkit-transition: -webkit-transform 0.35s;
+	transition: transform 0.35s;
+	-webkit-transform: translate3d(-100%,0,0);
+	transform: translate3d(-100%,0,0);
+}
+
+figure.effect:hover h3::after {
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+
+figure.effect p {
+	padding-top: 10px;
+	opacity: 0;
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+	-webkit-transform: translate3d(100%,0,0);
+	transform: translate3d(100%,0,0);
+}
+
+figure.effect:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+/* #projects .row { margin: 0px; } // bootstrap 3.1- hack */
+
+/*borrado por mi: #projects .row > div { margin-bottom: 30px; } */
+figure { position: relative; overflow: hidden; }
+figure h3 { color: #FFF; font-weight: 600; margin-bottom: 5px; }
+figure p > strong { width: 60px; display: inline-block; margin: 0px; }
+figure img { width: 110%; }
+
+figure figcaption {
+	padding: 20px 30px;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+}
+figure a {
+	z-index: 1000;
+	text-indent: 200%;
+	white-space: nowrap;
+	font-size: 0;
+	opacity: 0;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	height: 100%;
+	width: 100%;
+}
+figure .icon { 
+	background: #81ABC1;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+	width: 48px;
+	height: 48px;
+	vertical-align: middle;
+	text-align: center;
+}
+figure .icon i {
+	font-size: 18px;
+	line-height: 48px;
+}
+figure .title { 
+	font-size: 18px;
+	background: #81ABC1;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 180px;
+	height: 48px;
+	line-height: 48px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+figure.effect:hover .title {
+	opacity: 0;
+}
+figure.effect:hover .date {
+	opacity: 0;
+}
+figure.effect:hover .trophy {
+	opacity: 0;
+}
+
+/*Classes para los desplegables a partir de imagenes*/
+
+  .image_showcase{
+    cursor: pointer;
+
+  }
+
+  .image_showcase:hover{
+    opacity: 0.55;
+    transition: opacity 800ms;
+    filter: alpha(opacity=50);  
+  }

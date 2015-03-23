@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  .disappear{
+    display: none;
+  }
+  .appear{
+    display: block;
+  }
+
+  .image_showcase{
+    cursor: pointer;
+
+  }
+
+  .image_showcase:hover{
+    opacity: 0.55;
+    transition: opacity 800ms;
+    filter: alpha(opacity=50);  
+  }
+
+/*  #slide_block1 {
+      background: red;
+      width: 600px;
+      height: 600px;
+    }*/
+/*  #slide_block2 {
+      background: green;
+      width: 600px;
+      height: 400px;
+    }
+  #slide_block3 {
+      background: blue;
+}
+  .slide_block{
+
+  }
+*/
+    
+</style>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="css/general.css"/>
+
+  <!--SCRIPTS-->
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/general.js"></script>
+
+
+
+<script>
+/*JQUERY*/
+/*
+var uno=$('<div id="slide_block1" class="disappear">este es uno</div>');
+var otro=$('<div id="slide_block2" class="disappear">este es otro</div>');
+var ultimo=$('<div id="slide_block3" class="disappear">este es el ultimo</div>');
+*/
+function clickImage1(){
+/*  $('#espacio').empty();*/
+  $('#espacio').prepend($('#slide_block1'));
+  $('#slide_block1').slideDown();
+  $('#slide_block2').slideUp();
+  $('#slide_block3').slideUp();
+  $('#slide_block4').slideUp();
+
+}
+
+function clickImage2(){
+/*  $('#espacio').empty();*/
+  $('#espacio').prepend($('#slide_block2'));
+  $('#slide_block2').slideDown();
+  $('#slide_block1').slideUp();
+  $('#slide_block3').slideUp();
+  $('#slide_block4').slideUp();
+
+}
+function clickImage3(){
+/*  $('#espacio').empty();*/
+  $('#espacio').prepend($('#slide_block3'));
+  $('#slide_block3').slideDown();
+  $('#slide_block1').slideUp();
+  $('#slide_block2').slideUp();
+  $('#slide_block4').slideUp();
+}
+
+function clickImage4(){
+/*  $('#espacio').empty();*/
+  $('#espacio').prepend($('#slide_block4'));
+  $('#slide_block4').slideDown();
+  $('#slide_block1').slideUp();
+  $('#slide_block2').slideUp();
+  $('#slide_block3').slideUp();
+}
+
+
+</script>
+</head>
+<body>
+
+
+
+<!-- IMAGE CONTROLS -->
+  <div class="expositor_fondo"  id="image_block_4">
+    <div class="container">
+              <div  class="row">
+                <h2 style="margin-top:20px;">MENCIONES</h2>
+                <p style="margin-top:-10px;">Haga click sobre las siguientes imágenes para </p>
+                
+              </div>
+
+      <div class="row "  style="padding-top:20px; padding-bottom:20px;">
+
+              <div class="col-md-3 image_showcase" alt="img1 Showcase" style="position: relative;" onclick="clickImage1()">
+                <img src="./img/portait.jpg" height= "230px" width="230px;">
+              </div>
+
+              <div class="col-md-3 image_showcase" alt="img2 Showcase" style="position: relative;" onclick="clickImage2()">
+                <img src="./img/portait.jpg" height= "230px" width="230px;">
+              </div>
+
+              <div class="col-md-3 image_showcase" alt="img3 Showcase" style="position: relative;" onclick="clickImage3()">
+                <img src="./img/portait.jpg" height= "230px" width="230px;">
+              </div>
+
+              <div class="col-md-3 image_showcase" alt="img4 Showcase" style="position: relative;" onclick="clickImage4()">
+                <img src="./img/portait.jpg" height= "230px" width="230px;">
+              </div>
+
+            </div>
+
+              
+     
+    </div>
+  </div>
+
+<!-- EXPOSITORS -->
+
+<div id="espacio">
+<!-- 
+<div id="slide_block1" class="disappear"> -->
+  <div class="expositor_fondo disappear"  id="slide_block1">
+    <div class="container">
+      <div class="row "  style="padding-top:20px; padding-bottom:20px;">
+
+              <div class="col-md-3" >
+                <img src="./img/portait.jpg" style="width: 100%; max-width:230px; position: relative size: cover;">
+              </div>
+
+              <div class="col-md-8 col-md-offset-1">
+                <h2 style="margin-top:50px;">ARTICULO 1</h2>
+                <h3 style="margin-top:-10px;">Algo para presumir</h3>
+                <p style="margin-top:40px;">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p style="margin-top:20px;"><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div>
+
+              <div class="col-md-12 remark-cite">
+                <p>Insertar aqui una cita o algo importante</p>
+              </div>
+      </div>
+    </div>
+  </div>
+
+<!-- 
+          </div> -->
+      
+
+      
+
+
+
+   <div class="expositor_fondo disappear"  id="slide_block2">
+    <div class="container">
+      <div class="row "  style="padding-top:20px; padding-bottom:20px;">
+
+              
+
+              <div  class="col-md-8 col-md-offset-1">
+                <h2 style="margin-top:50px;">ARTICULO 2</h2>
+                <h3 style="margin-top:-10px;">Algo para presumir</h3>
+                <p style="margin-top:40px;">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p style="margin-top:20px;"><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div>
+
+              <div class="col-md-3" >
+                <img src="./img/portait.jpg" style="width: 100%; max-width:230px; position: relative size: cover;">
+              </div>
+
+              <div class="col-md-12 remark-cite">
+                <p>Insertar aqui una cita o algo importante</p>
+              </div>
+      </div>
+    </div>
+  </div>
+
+
+
+   <div class="expositor_fondo disappear"  id="slide_block3">
+    <div class="container">
+      <div class="row "  style="padding-top:20px; padding-bottom:20px;">
+
+              <div class="col-md-3" >
+                <img src="./img/portait.jpg" style="width: 100%; max-width:230px; position: relative size: cover;">
+              </div>
+
+              <div  class="col-md-8 col-md-offset-1">
+                <h2 style="margin-top:50px;">ARTICULO 3</h2>
+                <h3 style="margin-top:-10px;">Algo para presumir</h3>
+                <p style="margin-top:40px;">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p style="margin-top:20px;"><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div>
+
+              <div class="col-md-12 remark-cite">
+                <p>Insertar aqui una cita o algo importante</p>
+              </div>
+      </div>
+    </div>
+  </div>
+
+
+ <div class="expositor_fondo disappear"  id="slide_block4">
+    <div class="container">
+      <div class="row "  style="padding-top:20px; padding-bottom:20px;">
+
+              <div class="col-md-3" >
+                <img src="./img/portait.jpg" style="width: 100%; max-width:230px; position: relative size: cover;">
+              </div>
+
+              <div  class="col-md-8 col-md-offset-1">
+                <h2 style="margin-top:50px;">ARTICULO 4</h2>
+                <h3 style="margin-top:-10px;">Algo para presumir</h3>
+                <p style="margin-top:40px;">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+                <p style="margin-top:20px;"><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div>
+
+              <div class="col-md-12 remark-cite">
+                <p>Insertar aqui una cita o algo importante</p>
+              </div>
+      </div>
+    </div>
+  </div>
+
+
+      </div>
+</body>
+</html>
