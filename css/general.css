@@ -182,7 +182,11 @@ right: -45px;*/
 }
 
 
+.aligned_block{
 
+	text-align: center;
+	vertical-align: center;
+}
 
 .expositor_fondo{
 
@@ -277,6 +281,28 @@ div#image_block_4{
 	margin-left: 10px;
 }
 
+.first_font_footer{
+	position: relative;
+	display:inline;
+	font-weight: 700px;
+	font-size: 14pt;
+}
+
+.second_font_footer{
+	position: relative;
+	margin-top: 4pt;
+	display:inline;
+	font-weight: 700px;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+.third_font_footer{
+
+	text-align: right;
+	font-weight: 700px;
+	font-size: 12pt;
+}
 
 /*Separador para poner en la izquierda*/
 .mycontent-left {

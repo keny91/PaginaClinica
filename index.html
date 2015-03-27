@@ -15,6 +15,7 @@
   <!--CSS-->
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/general.css"/>
+  <link rel="stylesheet" href="css/icons.css">
 
   <!--SCRIPTS-->
   <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=true"></script>
@@ -439,40 +440,61 @@
 
   <div class="expositor_pie_pagina" >
     <div class="container" >
-      <div class="row" style="padding-top:20px; padding-bottom:20px;">
+      <div class="row" style="padding-top:20px; padding-bottom:20px;" style="position:relative; top:-20px">
 
-        <div class="col-md-6" >
+        <div class="col-md-4" style="position:relative; top:-20px">
           <h2>Horario de apertura:</h2>
-          <hr>
-          <div class="col-md-6" >
-            <h3>Lunes a Jueves:</h3>
-            <p>8:00 - 20:00 </p>
-          </div>
-          <div class="col-md-6" >
-            <h3>Viernes y Sábados:</h3>
-            <p>9:00 - 15:00 </p>
+          <hr style="position:relative; top:-8px">
+            <div style="position:relative; top:-20px">
+              <p>
+              <span  class="first_font_footer col-md-8" >
+                Lunes a Jueves:      
+              </span>
+              <span class="col-md-4 second_font_footer">   8:00 - 20:00 </span>
+             </p>
+           </div>
+           <div style="position:relative; top:-20px">
+            <p>
+              <span  class="first_font_footer col-md-8" >
+                Viernes y Sábados:     
+              </span>
+              <span class="col-md-4 second_font_footer">   9:00 - 15:00</span>
+            </p>
           </div>
 
         </div>
 
 
-        <div class="col-md-6" >
 
+        <div class="col-md-8"  style="position:relative; top:-20px">
           <h2>Informacion de contacto:</h2>
-          <hr>
-          <div class="col-md-6" >
-            <h3>Dirección:</h3>
-            <p> Madrid, 28036 </p>
-            <p> C/Concha Espina/ Nº XX/ yy </p>
+          <hr style="position:relative; top:-8px">
+
+          <div class="col-md-4 aligned_block">
+            <span class="col-md-4 icon icon-mail4"></span><span  class="col-md-8"><p> Madrid, 28036 </p>
+            <p> C/ Concha Espina / Nº XX/ yy </p></span>
+           <!--  <h3 style="position:relative; top:-15px">Dirección:</h3> -->
+            
           </div>
-          <div class="col-md-6" >
-            <h3>Teléfono:</h3>
+
+          <div class="col-md-4">
+            <span></span>
+            <span class="icon icon-mail4"></span>
+            <span class="icon icon-location"></span>
+
+            
             <p>620844394 </p>
             <p>91 37 843 43</p>
-            <hr>
+
+          </div>
+
+          <div class="col-md-4">
             <h3>Email:</h3>
             <p> contacto@centromedicoconchaespina.es </p>
           </div>
+          
+          
+          
 
         </div>
 
@@ -480,7 +502,7 @@
 
     </div>
   </div>
-</div>
+
   <!-- END Pie de pagina -->
 
 
