@@ -134,7 +134,9 @@ body{
 
 .extra-padding-4d{	padding: 10px 20px 10px 20px;}
 
-.color-container{	background-color: #81ABC1;}
+.color-container{	
+	border-radius: 5px;
+	background-color: #81ABC1;}
 
 .color-icon{
 	/*position: relative;*/
