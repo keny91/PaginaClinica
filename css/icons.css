@@ -9,6 +9,7 @@
 
 .icon {
 	font-family: 'IcoMoon-Free';
+	/*color:#AAA;*/
 /*	height: 64px;
 	width: 64px;*/
 	speak: none;
@@ -31,6 +32,9 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
+
+
 
 .icon-home:before {
 	content: "\e900";
