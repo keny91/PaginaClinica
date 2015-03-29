@@ -134,7 +134,9 @@ body{
 
 .extra-padding-4d{	padding: 10px 20px 10px 20px;}
 
-.color-container{	background-color: #81ABC1;}
+.color-container{	
+	border-radius: 5px;
+	background-color: #81ABC1;}
 
 .color-icon{
 	/*position: relative;*/
@@ -180,7 +182,11 @@ right: -45px;*/
 }
 
 
+.aligned_block{
 
+	text-align: center;
+	vertical-align: middle;
+}
 
 .expositor_fondo{
 
@@ -244,9 +250,10 @@ right: -45px;*/
 .expositor_pie_pagina{
 	top: 0;
 	left: 0;
+	color: #FFF;
 	/*height: 400px;*/
-	background-color: rgba(225,232,237,1);
-	background-size: 100% 600px;
+	background-color: rgba(140,140,140,1);
+	background-size: 100% auto;
 	/*background-repeat: fixed;*/
 	padding-top: 15px;
 	margin-top: 50px;
@@ -258,10 +265,45 @@ right: -45px;*/
 
 	/*background-image: url("/img/dermatologistsalary1158mod.jpg");*/
 }
+/*
+div.footer_color{*/
 
-div#image_block_4{
-	margin-top: 30px;
-}
+.opacity_50to100{
+
+
+    /*filter: alpha(opacity=50);  */
+    opacity: 0.45;
+	/*color: #FFF;*/
+	
+	}
+
+  .opacity_50to100:hover{
+    opacity: 1;
+    transition: opacity 800ms;
+    filter: alpha(opacity=50);  
+  }
+
+
+a.opacity_50to100{
+
+	color: #FFF;
+    /*filter: alpha(opacity=50);  */
+    opacity: 0.45;
+	/*color: #FFF;*/
+	
+	}
+
+a.opacity_50to100:hover{
+    opacity: 1;
+    transition: opacity 800ms;
+    filter: alpha(opacity=50);  
+
+  }
+
+p.hover_link:hover{
+    text-decoration: underline;
+
+  }
 
 .remark-cite{
 
@@ -275,6 +317,30 @@ div#image_block_4{
 	margin-left: 10px;
 }
 
+.first_font_footer{
+	position: relative;
+	display:inline;
+	font-weight: 700px;
+	font-size: 14pt;
+}
+
+.second_font_footer{
+	position: relative;
+	margin-top: 4pt;
+	/*display:inline;*/
+	font-weight: 700px;
+	font-size: 12pt;
+	font-weight: bold;
+	text-align: left;
+
+}
+
+.third_font_footer{
+
+	text-align: right;
+	font-weight: 700px;
+	font-size: 12pt;
+}
 
 /*Separador para poner en la izquierda*/
 .mycontent-left {
@@ -454,6 +520,11 @@ figure.effect:hover .trophy {
 }
 
 /*Classes para los desplegables a partir de imagenes*/
+
+ .add_pointer{
+ 	cursor: pointer;
+ 	
+ }
 
   .image_showcase{
     cursor: pointer;
