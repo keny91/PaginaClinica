@@ -185,7 +185,7 @@ right: -45px;*/
 .aligned_block{
 
 	text-align: center;
-	vertical-align: center;
+	vertical-align: middle;
 }
 
 .expositor_fondo{
@@ -271,11 +271,8 @@ div.footer_color{*/
 .opacity_50to100{
 
 
-
-
-    
     /*filter: alpha(opacity=50);  */
-    opacity: 0.55;
+    opacity: 0.45;
 	/*color: #FFF;*/
 	
 	}
@@ -287,7 +284,26 @@ div.footer_color{*/
   }
 
 
+a.opacity_50to100{
 
+	color: #FFF;
+    /*filter: alpha(opacity=50);  */
+    opacity: 0.45;
+	/*color: #FFF;*/
+	
+	}
+
+a.opacity_50to100:hover{
+    opacity: 1;
+    transition: opacity 800ms;
+    filter: alpha(opacity=50);  
+
+  }
+
+p.hover_link:hover{
+    text-decoration: underline;
+
+  }
 
 .remark-cite{
 
@@ -311,10 +327,12 @@ div.footer_color{*/
 .second_font_footer{
 	position: relative;
 	margin-top: 4pt;
-	display:inline;
+	/*display:inline;*/
 	font-weight: 700px;
 	font-size: 12pt;
 	font-weight: bold;
+	text-align: left;
+
 }
 
 .third_font_footer{
