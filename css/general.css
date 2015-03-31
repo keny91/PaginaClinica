@@ -41,42 +41,69 @@ body{
 .nav_correct{	margin-bottom: 0px;}
 
 .img_fondo{
+	position: relative;
 	top: 0;
 	left: 0;
 
 	height: 400px;
-	background: url(../img/dermatologistsalary1158mod.jpg);
-	background-size: cover;
+	
+	/*background-size: cover;*/
 	/*background-repeat: fixed;*/
 	/*width: inherit;*/
 	/*height: inherit;*/
 	/*max-width: 100%;*/
 	padding-top: 0px;
 	padding-bottom: 0px;
+	overflow: hidden;
+	margin-bottom: 10px;
 	/*background-image: url("/img/dermatologistsalary1158mod.jpg");*/
 }
+
+
 
 .img_fondo_info{
 	position: relative;
 	top: 0;
 	left: 0;
 	height: 400px;
-	background: url(../img/sample3.jpg);
+	
 	/*background-size: 100% 600px;*/
-	background-size: cover;
+	
 	/*background-repeat: fixed;*/
 	/*width: inherit;*/
 	/*height: inherit;*/
 	max-width: 100%;
 	padding-top: 0px;
 	padding-bottom: 0px;
-	overflow: hidden;
+	
 }
+
+.fondo_contactos{
+	background: url(../img/sample3.jpg);
+	background-size: cover;
+}
+
+.fondo_home{
+	background: url(../img/dermatologistsalary1158mod.jpg);
+	background-size: cover;
+}
+
+.fondo_tratamientos{
+	background: url(../img/sample3.jpg);
+	background-size: cover;
+}
+.fondo_conocenos{
+	background: url(../img/sample3.jpg);
+	background-size: cover;
+}
+
+
 
 .rotulo_imagen_fondo{
 	position: absolute;
 	/*opacity: 0.6;*/
 	/*top: -10px;*/
+	
 	bottom: -20px;
 	padding: 10px 20px 10px 20px;
 	font-family: arial;
@@ -365,11 +392,31 @@ hr { display: block; height: 1px;
 	border: 0; border-top: 1px solid #ccc;
 	margin: 1em 0; padding: 0; }
 
-.tele-font{	font-size: 30pt;}
+.large-font{	
+	font-size: 22pt;}
+
+.medium-font{
+	font-size: 18pt;
+	display: inline;
+	
+	}
+
+
+.medium-font-bold{
+	font-size: 14pt;
+	font-weight: bold;
+	font-family: arial;
+	}
+
+.left-align-text{
+	/*position: relative;*/
+	float: right;
+}
 
 #map-canvas{
 	width: 100%;
-	height: 500px;
+	height: 380px;
+	margin-top: 35px;
 
 }
 
