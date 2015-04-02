@@ -62,6 +62,11 @@ function clickTratamientos(){
   document.getElementById("nav_tratamientos").classList.add("active");
   document.getElementById("nav_personal").classList.remove("active");
   document.getElementById("nav_contacto").classList.remove("active");
+
+ /* document.getElementById("hover_image1").classList.add("resizable_hover_image");
+  document.getElementById("hover_image2").classList.add("resizable_hover_image");
+  document.getElementById("hover_image3").classList.add("resizable_hover_image");*/
+
 }
 function clickPersonal(){
   $('#contenedor_bloques').prepend($('#bloque_personal'));
@@ -136,3 +141,68 @@ function clickImage4(){
   $('#slide_block3').slideUp();
 }
 
+
+/* Resizing images*/
+
+var factor = 2; /*double size*/
+var foo_width = $('.resizable_hover_image').width();
+var foo_height = $('.resizable_hover_image').height();
+
+
+/*$('.resizable_hover_image').mouseenter(function() {
+    $(this).animate({
+        top: '-=' + foo_width / factor,
+        left: '-=' + foo_height / factor,
+        width: $(this).width() * factor,
+        height: $(this).height() * factor
+        
+    },1000);
+    $(this).css('z-index', 100);
+});
+*/
+/*$('.resizable_hover_image').mouseout(function() {
+    $(this).animate({
+        top: '+=' + foo_width/ factor,
+        left: '+=' + foo_height / factor,
+        width: $(this).width() / factor,
+        height: $(this).height() / factor
+
+        
+    },1000);
+    $(this).css('z-index', 1);
+});*/
+
+
+$( ".resizable_hover_image" ).on( "mouseenter", function() {
+/*console.log( $( this ).text() );
+});
+
+$('.resizable_hover_image').mouseenter(function() {*/
+    $(this).animate({
+        top: '-=' + foo_width / factor,
+        /*top: '+= 50px' ,*/
+        left: '-=' + foo_height / factor ,
+        /*left: '+= 25px' ,*/
+        width: 100*factor,
+        height: 150*factor
+        
+    },500);
+    $(this).css('z-index', 100);
+    $(this).css('opacity', 1);
+});
+
+$( ".resizable_hover_image" ).on( "mouseout", function() {
+/*$('.resizable_hover_image').mouseout(function() {*/
+    $(this).animate({
+        top: '+=' + foo_width/ factor ,
+        /*top: '+= 0',*/
+        left: '+=' + foo_height / factor ,
+        /*left: '+=0',*/
+        width: 100,
+        height: 150
+
+        
+    },500);
+    $(this).css('z-index', 1);
+    $(this).css('opacity', 0.7);
+});
