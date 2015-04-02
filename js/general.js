@@ -173,11 +173,9 @@ var foo_height = $('.resizable_hover_image').height();
 });*/
 
 
-$( ".resizable_hover_image" ).on( "mouseenter", function() {
-/*console.log( $( this ).text() );
-});
+$(".resizable_hover_image" ).on( "mouseenter", function() {
 
-$('.resizable_hover_image').mouseenter(function() {*/
+/*$('.resizable_hover_image').mouseenter(function() {*/
     $(this).animate({
         top: '-=' + foo_width / factor,
         /*top: '+= 50px' ,*/
