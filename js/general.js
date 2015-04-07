@@ -1,3 +1,24 @@
+ 
+
+
+
+
+/*  
+$('#pie').ready(function(){
+*/
+ /*   clickInicio();*/
+    
+/*  });*/
+
+
+
+
+
+
+
+
+
+
   function initialize() {
     var myLatlng = new google.maps.LatLng(40.451846,-3.687233);
     var mapOptions = {
@@ -16,13 +37,32 @@
   google.maps.event.addDomListener(window, 'load', initialize);
   //google.maps.event.trigger(map, 'resize');
 
+
+
+
+
+
+
+
+
+
 function clickInicio(){
-  $('#contenedor_bloques').prepend($('#bloque_inicio'));
+  /*$('#contenedor_bloques').prepend($('#bloque_inicio'));
   $('#bloque_inicio').slideDown();
-  /*$('#bloque_info').slideUp();*/
+
   $('#bloque_tratamientos').slideUp();
   $('#bloque_personal').slideUp();
-  $('#bloque_contacto').slideUp();
+  $('#bloque_contacto').slideUp();*/
+
+/*  $("#contenedor_bloques").load("./html/home.html", function(){
+       $('#contenedor_bloques').fadeIn('slow');
+       $("#contenedor_bloques").load("./html/home.html");
+    });
+*/
+
+
+  $("#contenedor_bloques").load("./html/home.html");
+
 
   document.getElementById("nav_inicio").classList.add("active");
 /*  document.getElementById("nav_info").classList.remove("active");*/
@@ -50,12 +90,19 @@ function clickInicio(){
 }*/
 
 function clickTratamientos(){
-  $('#contenedor_bloques').prepend($('#bloque_tratamientos'));
+
+
+  $("#contenedor_bloques").load("./html/tratamientos.html");
+
+
+/*  $('#contenedor_bloques').prepend($('#bloque_tratamientos'));
   $('#bloque_tratamientos').slideDown();
   $('#bloque_inicio').slideUp();
-/*  $('#bloque_info').slideUp();*/
   $('#bloque_personal').slideUp();
   $('#bloque_contacto').slideUp();
+
+*/
+
 
   document.getElementById("nav_inicio").classList.remove("active");
  /* document.getElementById("nav_info").classList.remove("active");*/
@@ -69,12 +116,16 @@ function clickTratamientos(){
 
 }
 function clickPersonal(){
+
+
+
+  $("#contenedor_bloques").load("./html/personal.html");
+/*
   $('#contenedor_bloques').prepend($('#bloque_personal'));
   $('#bloque_personal').slideDown();
   $('#bloque_inicio').slideUp();
-/*  $('#bloque_info').slideUp();*/
   $('#bloque_tratamientos').slideUp();
-  $('#bloque_contacto').slideUp();
+  $('#bloque_contacto').slideUp();*/
 
   document.getElementById("nav_inicio").classList.remove("active");
 /*  document.getElementById("nav_info").classList.remove("active");*/
@@ -82,14 +133,18 @@ function clickPersonal(){
   document.getElementById("nav_personal").classList.add("active");
   document.getElementById("nav_contacto").classList.remove("active");
 }
+
+
 function clickContacto(){
-  $('#contenedor_bloques').prepend($('#bloque_contacto'));
+
+   $("#contenedor_bloques").load("./html/contacto.html");
+
+/*  $('#contenedor_bloques').prepend($('#bloque_contacto'));
   $('#bloque_contacto').slideDown();
   $('#bloque_inicio').slideUp();
-/*  $('#bloque_info').slideUp();*/
   $('#bloque_tratamientos').slideUp();
   $('#bloque_personal').slideUp();
-
+*/
   document.getElementById("nav_inicio").classList.remove("active");
   /*document.getElementById("nav_info").classList.remove("active");*/
   document.getElementById("nav_tratamientos").classList.remove("active");
@@ -204,3 +259,5 @@ $( ".resizable_hover_image" ).on( "mouseout", function() {
     $(this).css('z-index', 1);
     $(this).css('opacity', 0.7);
 });
+
+
