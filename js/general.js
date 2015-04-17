@@ -12,6 +12,7 @@
       map: map,
       title: 'Centro médico Concha Espina'});
   }
+  
   //map = new google.maps.Map(document.getElementById("map_canvas"), { mapTypeId: google.maps.MapTypeId.ROADMAP });
   google.maps.event.addDomListener(window, 'load', initialize);
   //google.maps.event.trigger(map, 'resize');
@@ -98,7 +99,7 @@ function clickContacto(){
 
   document.getElementById("map-canvas").style.display="block";
   initialize();
-  
+ /* google.maps.event.addDomListener(window, 'load', initialize);*/
 }
 
 
