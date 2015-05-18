@@ -78,9 +78,24 @@ body{
 	
 }
 
+.color-container{
+	height: 264px;
+
+}
+
+.color-container p{
+   
+    margin-left: 12px;
+}
+
+.color-container h2 {
+    text-align: center;
+    padding-bottom: 5px;
+    margin-left: -12px;
+}
 
 .fondo_contactos{
-	background: url(../img/sample3.jpg);
+	background: url(../img/img_fondo/imagen_fondo_contacto.jpg);
 	background-size: cover;
 }
 
@@ -90,11 +105,11 @@ body{
 }
 
 .fondo_tratamientos{
-	background: url(../img/sample3.jpg);
+	background: url(../img/img_fondo/imagen_fondo_tratamientos.jpg);
 	background-size: cover;
 }
 .fondo_conocenos{
-	background: url(../img/sample3.jpg);
+	background: url(../img/img_fondo/imagen_fondo_personal.jpg);
 	background-size: cover;
 }
 
@@ -104,7 +119,11 @@ body{
 
 }
 
-
+.doc_row{
+	position: relative;
+	top: 90px;
+	margin-top: 70px;
+}
 
 
 /*Fade on load*/
@@ -278,7 +297,7 @@ body{
 	/*top: -10px;*/
 	
 	bottom: -20px;
-	padding: 10px 20px 10px 0px;
+	padding: 10px 15px 15px 15px;
 	font-family: arial;
 	font-size: 40pt;
 	font-weight: bold;	
@@ -761,3 +780,35 @@ figure.effect:hover .trophy {
     transition: opacity 800ms;
     filter: alpha(opacity=50);  
   }
+
+
+
+/*Bootstrap Reajustments*/
+
+.color-container p a{	
+	color: #454545;
+	font-size: 12pt;
+	padding-top: 5px;
+	padding-left: 20px;
+	font-weight: bold;
+	}
+
+.color-container p a:hover{	
+	color: #000;
+	font-size: 12pt;
+
+	
+	}
+
+
+.legible p{
+
+	font-family: arial;
+	font-size: 14pt;
+}
+
+.legible_arial{
+
+	font-family: arial;
+
+}

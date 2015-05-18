@@ -12,6 +12,14 @@ $('#pie').ready(function(){
 
 
 
+  
+$('body').ready(function(){
+
+    clickInicio();
+    load_Home();
+    
+  });
+
 
 
 
@@ -35,7 +43,8 @@ $('#pie').ready(function(){
   }
   
   //map = new google.maps.Map(document.getElementById("map_canvas"), { mapTypeId: google.maps.MapTypeId.ROADMAP });
-  google.maps.event.addDomListener(window, 'load', initialize);
+  google.maps.event.addDomListener(window, 'load', initialize());
+ 
   //google.maps.event.trigger(map, 'resize');
 
 
@@ -43,23 +52,9 @@ $('#pie').ready(function(){
 
 
 
-
-
-
+/*Active tabs control*/
 
 function clickInicio(){
-  /*$('#contenedor_bloques').prepend($('#bloque_inicio'));
-  $('#bloque_inicio').slideDown();
-
-  $('#bloque_tratamientos').slideUp();
-  $('#bloque_personal').slideUp();
-  $('#bloque_contacto').slideUp();*/
-
-/*  $("#contenedor_bloques").load("./html/home.html", function(){
-       $('#contenedor_bloques').fadeIn('slow');
-       $("#contenedor_bloques").load("./html/home.html");
-    });
-*/
 
 
   $("#contenedor_bloques").load("./html/home.html");
@@ -92,44 +87,16 @@ function clickInicio(){
 
 function clickTratamientos(){
 
-
-  $("#contenedor_bloques").load("./html/tratamientos.html");
-
-
-/*  $('#contenedor_bloques').prepend($('#bloque_tratamientos'));
-  $('#bloque_tratamientos').slideDown();
-  $('#bloque_inicio').slideUp();
-  $('#bloque_personal').slideUp();
-  $('#bloque_contacto').slideUp();
-
-*/
-
-
   document.getElementById("nav_inicio").classList.remove("active");
- /* document.getElementById("nav_info").classList.remove("active");*/
   document.getElementById("nav_tratamientos").classList.add("active");
   document.getElementById("nav_personal").classList.remove("active");
   document.getElementById("nav_contacto").classList.remove("active");
 
- /* document.getElementById("hover_image1").classList.add("resizable_hover_image");
-  document.getElementById("hover_image2").classList.add("resizable_hover_image");
-  document.getElementById("hover_image3").classList.add("resizable_hover_image");*/
-
 }
-function clickPersonal(){
 
-
-
-  $("#contenedor_bloques").load("./html/personal.html");
-/*
-  $('#contenedor_bloques').prepend($('#bloque_personal'));
-  $('#bloque_personal').slideDown();
-  $('#bloque_inicio').slideUp();
-  $('#bloque_tratamientos').slideUp();
-  $('#bloque_contacto').slideUp();*/
+function clickConocenos(){
 
   document.getElementById("nav_inicio").classList.remove("active");
-/*  document.getElementById("nav_info").classList.remove("active");*/
   document.getElementById("nav_tratamientos").classList.remove("active");
   document.getElementById("nav_personal").classList.add("active");
   document.getElementById("nav_contacto").classList.remove("active");
@@ -138,16 +105,7 @@ function clickPersonal(){
 
 function clickContacto(){
 
-   $("#contenedor_bloques").load("./html/contacto.html");
-
-/*  $('#contenedor_bloques').prepend($('#bloque_contacto'));
-  $('#bloque_contacto').slideDown();
-  $('#bloque_inicio').slideUp();
-  $('#bloque_tratamientos').slideUp();
-  $('#bloque_personal').slideUp();
-*/
   document.getElementById("nav_inicio").classList.remove("active");
-  /*document.getElementById("nav_info").classList.remove("active");*/
   document.getElementById("nav_tratamientos").classList.remove("active");
   document.getElementById("nav_personal").classList.remove("active");
   document.getElementById("nav_contacto").classList.add("active");
@@ -158,7 +116,62 @@ function clickContacto(){
 }
 
 
+/*load each HTML*/
+function load_Home(){
+
+  $("#contenedor_bloques").load("./html/home.html");
+  clickInicio();
+}
+
+
+function load_tratamientos(){
+
+  $('#contenedor_bloques').load('./html/tratamientos.html');
+  clickTratamientos();
+
+}
+
+function load_tratamientos_laser(){
+
+  $("#contenedor_bloques").load("./html/tratamientos/depilacion_laser.html");
+  clickTratamientos();
+}
+
+function load_contacto(){
+
+  $('#contenedor_bloques').load('./html/contacto.html');
+  clickContacto();
+
+}
+
+function load_conocenos(){
+
+  $('#contenedor_bloques').load('./html/conocenos.html');
+  clickConocenos();
+
+}
+
+
+
+
+
 /*Functions for image-slide expositors*/
+
+
+/*do a single image clicker
+function clickImage1(image, number){
+ $('#espacio').empty();*/
+/*  document.getElementById(image);
+
+  $('#espacio').prepend($('#slide_block1'));
+  $('#slide_block1').slideDown();
+  $('#slide_block2').slideUp();
+  $('#slide_block3').slideUp();
+  $('#slide_block4').slideUp();
+
+}*/
+
+
 
 function clickImage1(){
 /*  $('#espacio').empty();*/

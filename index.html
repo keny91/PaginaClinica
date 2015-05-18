@@ -6,7 +6,7 @@
   <link rel="shortcut icon" href="./img/favicon.ico">
   <title>DermaSalud</title>
   <!--INFO-->
-  <meta name="description" content="Pagina web del Centro Médico Concha Espina.">
+  <meta name="description" content="Los mejores profesionales .">
   <meta name="author" content="Luis Herranz, Carmen Alonso">
   <meta http-equiv="content-language" content="es"/>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -62,29 +62,31 @@
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
           <ul class="nav navbar-nav navbar-right">
-            <li id="nav_inicio" onclick = "clickInicio();" class="active"><a href="#">HOME<span class="sr-only">(current)</span></a></li>
+            <li id="nav_inicio" onclick = "load_Home();" class="active"><a href="#">HOME<span class="sr-only">(current)</span></a></li>
             <!-- <li id="nav_info" onclick = "clickInfo();" ><a href="#">INFO</a></li> -->
-            <li  id="nav_tratamientos" onclick = "clickTratamientos();" class="dropdown">
+            <li  id="nav_tratamientos" onclick = "" class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">TRATAMIENTOS<span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
-                <li><a href="#">granos</a></li>
-                <li><a href="#">pulgas</a></li>
-                <li><a href="#">ronchas</a></li>
+                <li role="presentation" class="dropdown-header">Medicina Estética</li>
+                <li onclick = "load_tratamientos_laser();"><a href="#">Depilación Laser</a></li>
+                <li><a href="#">Laser Vascular</a></li>
+                <li><a href="#">Tratamientos Estéticos</a></li>
+                <li><a href="#">Dermatología Estética</a></li>
+
+
                 <li class="divider"></li>
-                <li><a href="#">picores varios</a></li>
-                <li class="divider"></li>
-                <li><a href="#">veo borroso</a></li>
+
+                <li role="presentation" class="dropdown-header">Medicina General</li>
+                <li><a href="#">Dermatología General</a></li>
+                <li><a href="#">Dermatología Pediatrica</a></li>
+                <li><a href="#">Cirugía Dermatológica</a></li>
               </ul>
             </li>
-            <li id="nav_contacto" onclick = "clickContacto();"><a href="#">CONTACTO</a></li>
-            <li  id="nav_personal" onclick = "clickPersonal();" class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">CONÓCENOS<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="#">aqui</a></li>
-                <li><a href="#">no</a></li>
-                <li><a href="#">pone</a></li>
-                <li><a href="#">nada</a></li>
-              </ul>
+            <li id="nav_contacto" onclick = "load_contacto();" class="active"><a href="#">CONTACTO<span class="sr-only"></span></a></li>
+            
+            <li id="nav_personal" onclick = "load_conocenos();" class="active"><a href="#">EQUIPO<span class="sr-only"></span></a></li>
+            
+              
             </li>
           </ul>
         </div><!-- /.navbar-collapse -->
@@ -94,7 +96,7 @@
     <!-- END Navbar -->
 
     <!--BLOQUES PARA CADA PÁGINA-->
-</div id="contenedor_bloques">
+<div id="contenedor_bloques">
 
 
 
@@ -121,597 +123,21 @@
 
 
 
-    <!--BLOQUE  INICIO-->
-    <div id="bloque_inicio" class="appear">
-      <!-- Begin PIC-FONDO -->
 
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="img_fondo fondo_home">
-        <!-- <img class="img_fondo abs_position img_jumbo" src="./img/dermatologistsalary1158mod.jpg"> -->
-        <div class="container">
-          <p class="rotulo1">MUCHAS </p>
-          <p class="rotulo2">POSIBILIDADES</p>
 
-          <p class="rotulo_texto1">Sencillo. Seguro.</p>
-          <p class="rotulo_texto2">Con los mejores profesionales</p>
-        </div>
-      </div>
-      <!-- END PIC FONDO -->
 
-      <!-- Begin 3 expositores -->
-      <div class="container" style="padding-top:50px;">
-        <!-- Example row of columns -->
-        <div class="row">
-          <div class="col-md-4 ">
-            <div class="col-md-12 ">
-              <img src="./img/circulo_laser.png"  alt="icon1" class="color-icon">
-              <div class="color-container extra-padding-4d">
-                <h2 class="over-color-icon">Laser</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-              </div>
-            </div>
-          </div>
 
-          <div class="col-md-4 ">
-            <div class="col-md-12 ">
-              <img src="./img/circulo.png"  alt="icon2" class="color-icon">
-              <div class="color-container extra-padding-4d">
-                <h2 class="over-color-icon">Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="col-md-12 ">
-              <img src="./img/circulo.png"  alt="icon3" class="color-icon">
-              <div class="color-container extra-padding-4d">
-                <h2 class="over-color-icon">Heading</h2>
-                <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
 
 
-      <!-- <hr> -->
 
-      <!-- End 3 expositores -->
-
-      <!-- Begin extra expositor -->
-
-      <!-- Main jumbotron for a primary marketing message or call to action -->
-      <div class="expositor_fondo" id="bloque_expositor" style="margin-top:150px;"> 
-        <div class="container" >
-
-          <div class="row" style="padding-top:20px;">
-
-
-
-            <div class="row" style="padding-top:20px;">
-
-              <div class="col-md-3" >
-                <img src="./img/portait.jpg" style="width: 100%; max-width:230px; position: relative size: cover;">
-              </div>
-
-              <div id="bloque_articulos" class="col-md-8 col-md-offset-1">
-                <h2 style="margin-top:50px;">ARTICULO</h2>
-                <h3 style="margin-top:-10px;">Algo para presumir</h3>
-                <p style="margin-top:40px;">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p style="margin-top:20px;"><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-              </div>
-
-              <div class="col-md-12 remark-cite">
-                <p>Insertar aqui una cita o algo importante</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-        <!-- END extra expositor -->
-      </div>
-
-      <!-- Expositor de imágenes desplegables -->
-
-  <div   id="image_block_4" style="margin-top:120px;">
-    <div class="container">
-              <div  class="row">
-                <div class="expositor_fondo" id="rotulo_menciones">
-                <h2 style="">MENCIONES</h2>
-                <p style="margin-top:-10px;">Haga click sobre las siguientes imágenes para </p>
-                </div>
-              </div>
-
-      <div class="row expositor_fondo" id="contenedor_imagenes" style="padding-top:20px; padding-bottom:20px;">
-
-              <div class="col-md-3" alt="img1 Showcase" style="position: relative;" >
-                <img src="./img/portait.jpg" class="image_showcase" onclick="clickImage1()" height= "230px" width="230px;">
-              </div>
-
-              <div class="col-md-3 " alt="img2 Showcase" style="position: relative;">
-                <img src="./img/portait.jpg" height= "230px" width="230px;" class="image_showcase" onclick="clickImage2()">
-              </div>
-
-              <div class="col-md-3 " alt="img3 Showcase" style="position: relative;">
-                <img src="./img/portait.jpg" height= "230px" width="230px;" class="image_showcase" onclick="clickImage3()">
-              </div>
-
-              <div class="col-md-3 " alt="img4 Showcase" style="position: relative;">
-                <img src="./img/portait.jpg" height= "230px" width="230px;" class="image_showcase" onclick="clickImage4()">
-              </div>
-
-            </div>
-
-              
-     
-    </div>
-  </div>
-
-<!-- EXPOSITORS -->
-
-<div id="espacio">
-<!-- 
-<div id="slide_block1" class="disappear"> -->
-  <div class="expositor_fondo disappear" style="" id="slide_block1">
-    <div class="container">
-      <div class="row "  style="padding-top:20px; padding-bottom:20px;">
-
-              <div class="col-md-3" >
-                <img src="./img/portait.jpg" style="width: 100%; max-width:230px; position: relative size: cover;">
-              </div>
-
-              <div class="col-md-8 col-md-offset-1">
-                <h2 style="margin-top:50px;">ARTICULO 1</h2>
-                <h3 style="margin-top:-10px;">Algo para presumir</h3>
-                <p style="margin-top:40px;">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p style="margin-top:20px;"><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-              </div>
-
-              <div class="col-md-12 remark-cite">
-                <p>Insertar aqui una cita o algo importante</p>
-              </div>
-      </div>
-    </div>
-  </div>
-
-<!-- 
-          </div> -->
-      
-
-      
-
-
-
-   <div class="expositor_fondo disappear"  id="slide_block2">
-    <div class="container">
-      <div class="row "  style="padding-top:20px; padding-bottom:20px;">
-
-              
-
-              <div  class="col-md-8 col-md-offset-1">
-                <h2 style="margin-top:50px;">ARTICULO 2</h2>
-                <h3 style="margin-top:-10px;">Algo para presumir</h3>
-                <p style="margin-top:40px;">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p style="margin-top:20px;"><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-              </div>
-
-              <div class="col-md-3" >
-                <img src="./img/portait.jpg" style="width: 100%; max-width:230px; position: relative size: cover;">
-              </div>
-
-              <div class="col-md-12 remark-cite">
-                <p>Insertar aqui una cita o algo importante</p>
-              </div>
-      </div>
-    </div>
   </div>
 
 
 
-   <div class="expositor_fondo disappear"  id="slide_block3">
-    <div class="container">
-      <div class="row "  style="padding-top:20px; padding-bottom:20px;">
 
-              <div class="col-md-3" >
-                <img src="./img/portait.jpg" style="width: 100%; max-width:230px; position: relative size: cover;">
-              </div>
 
-              <div  class="col-md-8 col-md-offset-1">
-                <h2 style="margin-top:50px;">ARTICULO 3</h2>
-                <h3 style="margin-top:-10px;">Algo para presumir</h3>
-                <p style="margin-top:40px;">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p style="margin-top:20px;"><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-              </div>
 
-              <div class="col-md-12 remark-cite">
-                <p>Insertar aqui una cita o algo importante</p>
-              </div>
-      </div>
-    </div>
-  </div>
 
-
- <div class="expositor_fondo disappear"  id="slide_block4">
-    <div class="container">
-      <div class="row "  style="padding-top:20px; padding-bottom:20px;">
-
-              <div class="col-md-3" >
-                <img src="./img/portait.jpg" style="width: 100%; max-width:230px; position: relative size: cover;">
-              </div>
-
-              <div  class="col-md-8 col-md-offset-1">
-                <h2 style="margin-top:50px;">ARTICULO 4</h2>
-                <h3 style="margin-top:-10px;">Algo para presumir</h3>
-                <p style="margin-top:40px;">Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-                <p style="margin-top:20px;"><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-              </div>
-
-              <div class="col-md-12 remark-cite">
-                <p>Insertar aqui una cita o algo importante</p>
-              </div>
-      </div>
-    </div>
-  </div>
-
-
-      </div>
-
-
-    </div>
-<!-- END BLOQUE INICIO -->
-
-<!-- BLOQUE INFO -->
-     <!--  <div id="bloque_info" class="disappear">
-       
-    </div> -->
-<!-- END BLOQUE INFO -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- BLOQUE TRATAMIENTOS -->
-    <div id="bloque_tratamientos" class="disappear">
-
-      <div class="img_fondo fondo_tratamientos " id="image_top" style="">
-        <div class="container ">
-          <p class="rotulo_imagen_fondo">NUESTROS SERVICIOS</p>
-        </div>
-      </div>
-
-
-      <div class="container">
-
-        <div class="row">
-        <span class="rotulo_remark col-md-5"> Medicina Estética </span>
-        </div>
-
-        <!-- BLOQUE CON 3 IMAGENES SUPERPUESTAS NECESITAN IDs PROPIOS-->
-        <div class="row" id="trat_bloq_1">
-
-          <div class="col-md-6">
-
-            <h1 style="margin-top:50px;">
-                Tratamiento 1:</h1>
-
-                <p style="margin-top:22px;">Que si metro cerca del Besdadssassafadd af ad aaf s fa  asf assf asf sa fsaff afs sffas snabeu, lineas de metro y autobus fdaf s fsfdf . Linea shahsgafgs... </p>
-
-                <ul class="list_tratamientos">
-                  <li>En X sesiones</li>
-                  <li>Rápido e Indoloro</li>
-                  <li>Equipos de última generación</li>
-                </ul>
-
-                <p style="margin-top:22px;">Que si metro cerca del Besdadssassafadd af ad aaf s fa  asf assf asf sa fsaff afs sffas snabeu, lineas de metro y autobus fdaf s fsfdf . Linea shahsgafgs... </p>
-          </div>
-
-          <div class="col-md-6 
-           triple_image_container" >
-
-            <img class="resizable_hover_image triple_image_first" src="http://3.bp.blogspot.com/_wLy5VnVPGS4/TQwqRW-QPhI/AAAAAAAAIQM/huLOLPQZE_o/s1600/unicorn.jpg" />
-
-            <img class="resizable_hover_image triple_image_second" src="http://3.bp.blogspot.com/_wLy5VnVPGS4/TQwqRW-QPhI/AAAAAAAAIQM/huLOLPQZE_o/s1600/unicorn.jpg" />
-
-            <img class=" resizable_hover_image triple_image_third" src="http://3.bp.blogspot.com/_wLy5VnVPGS4/TQwqRW-QPhI/AAAAAAAAIQM/huLOLPQZE_o/s1600/unicorn.jpg" />
-
-          </div>
-        </div>
-
-        <div style="margin-top: 50px; margin-bottom: 40px;">
-          <hr>
-          <hr style="margin-top:-10px;">
-
-        </div>
-
-          <!-- Next bloq -->
-      
-
-
-
-        <!-- BLOQUE CON 1 IMAGENES SUPERPUESTAS NECESITAN IDs PROPIOS-->
-        <div class="row" id="trat_bloq_2">
-
-          <div class="col-md-6">
-
-            <h2 style="margin-top:50px;">
-                Tratamiento 2:</h2>
-
-                <p style="margin-top:22px;">Que si metro cerca del Besdadssassafadd af ad aaf s fa  asf assf asf sa fsaff afs sffas snabeu, lineas de metro y autobus fdaf s fsfdf . Linea shahsgafgs... </p>
-
-                <ul class="list_tratamientos">
-                  <li>En X sesiones</li>
-                  <li>Rápido e Indoloro</li>
-                  <li>Equipos de última generación</li>
-                </ul>
-
-                <p style="margin-top:22px;">Que si metro cerca del Besdadssassafadd af ad aaf s fa  asf assf asf sa fsaff afs sffas snabeu, lineas de metro y autobus fdaf s fsfdf . Linea shahsgafgs... </p>
-          </div>
-
-          <div class="col-md-6 
-           triple_image_container" >
-
-            <img class="second_plane_img" src="http://3.bp.blogspot.com/_wLy5VnVPGS4/TQwqRW-QPhI/AAAAAAAAIQM/huLOLPQZE_o/s1600/unicorn.jpg" />
-
-            <img class="first_plane_img_bot_left on_top" src="http://3.bp.blogspot.com/_wLy5VnVPGS4/TQwqRW-QPhI/AAAAAAAAIQM/huLOLPQZE_o/s1600/unicorn.jpg" />
-
-           <!--  <img class=" resizable_hover_image triple_image_third" src="http://3.bp.blogspot.com/_wLy5VnVPGS4/TQwqRW-QPhI/AAAAAAAAIQM/huLOLPQZE_o/s1600/unicorn.jpg" /> -->
-
-          </div>
-        </div>
-
-     <div style="margin-top: 50px; margin-bottom: 40px;">
-          <hr>
-          <hr style="margin-top:-10px;">
-
-        </div>
-          <!-- Next bloq -->
-
-
-
-
-
-
-
-          <div class="row" id="trat_bloq_3">
-
-          <div class="col-md-6">
-
-            <h2 style="margin-top:50px;">
-                Tratamiento 3:</h2>
-
-                <p style="margin-top:22px;">Que si metro cerca del Besdadssassafadd af ad aaf s fa  asf assf asf sa fsaff afs sffas snabeu, lineas de metro y autobus fdaf s fsfdf . Linea shahsgafgs... </p>
-
-                <ul class="list_tratamientos">
-                  <li>En X sesiones</li>
-                  <li>Rápido e Indoloro</li>
-                  <li>Equipos de última generación</li>
-                </ul>
-
-                <p style="margin-top:22px;">Que si metro cerca del Besdadssassafadd af ad aaf s fa  asf assf asf sa fsaff afs sffas snabeu, lineas de metro y autobus fdaf s fsfdf . Linea shahsgafgs... </p>
-          </div>
-
-          <div class="col-md-6 
-           triple_image_container" >
-
-            <img class="single_image" src="http://3.bp.blogspot.com/_wLy5VnVPGS4/TQwqRW-QPhI/AAAAAAAAIQM/huLOLPQZE_o/s1600/unicorn.jpg" />
-
-            <!-- <img class="first_plane_img_top_right on_top" src="http://3.bp.blogspot.com/_wLy5VnVPGS4/TQwqRW-QPhI/AAAAAAAAIQM/huLOLPQZE_o/s1600/unicorn.jpg" /> -->
-
-           <!--  <img class=" resizable_hover_image triple_image_third" src="http://3.bp.blogspot.com/_wLy5VnVPGS4/TQwqRW-QPhI/AAAAAAAAIQM/huLOLPQZE_o/s1600/unicorn.jpg" /> -->
-
-          </div>
-        </div>
-
-     <div style="margin-top: 50px; margin-bottom: 40px;">
-          <hr>
-          <hr style="margin-top:-10px;">
-
-        </div>
-      </div>
-
-
-
-
-
-
-    </div>
-<!-- END BLOQUE TRATAMIENTOS -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- BLOQUE PERSONAL -->
-    <div id="bloque_personal" class="disappear">
-
-      <div class="img_fondo fondo_conocenos " id="image_top">
-        <div class="container ">
-          <p class="rotulo_imagen_fondo">QUÍENES SOMOS</p>
-        </div>
-      </div>
-
-
-      <div class="container">
-        <div class="col-md-4">
-          <figure class="effect">
-            <img src="./img/icons/Doctor_2-512.png" alt="Esto es un señor doctor">
-            <figcaption>
-              <h3>Dr. Frankenstein</h3>
-              <p>Este tio sabe mazo</p>
-              <p><strong>esto es lo q sabe:</strong> <br>granos, pulgas, ronchas</p>
-              <a href="http://www.doctor.com" target="_blank">Ve a su web</a>
-              <span class="title">
-                Dr. Frankenstein
-              </span>
-            </figcaption> 
-          </figure>
-        </div>
-
-        <div class="col-md-4">
-          <figure class="effect">
-            <img src="./img/icons/Doctor-512.png" alt="Esto es un señor doctor">
-            <figcaption>
-              <h3>Dr. Frankenstein</h3>
-              <p>Este tio sabe mazo</p>
-              <p><strong>esto es lo q sabe:</strong> <br>granos, pulgas, ronchas</p>
-              <a href="http://www.doctor.com" target="_blank">Ve a su web</a>
-              <span class="title">
-                Dr. Frankenstein
-              </span>
-            </figcaption> 
-          </figure>
-        </div>
-
-        <div class="col-md-4">
-          <figure class="effect">
-            <img src="./img/icons/Dr._Wernstrom.png" alt="Esto es un señor doctor">
-            <figcaption>
-              <h3>Dr. Frankenstein</h3>
-              <p>Este tio sabe mazo</p>
-              <p><strong>esto es lo q sabe:</strong> <br>granos, pulgas, ronchas</p>
-              <a href="http://www.doctor.com" target="_blank">Ve a su web</a>
-              <span class="title">
-                Dr. Frankenstein
-              </span>
-            </figcaption> 
-          </figure>
-        </div>
-    </div>
-
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- END BLOQUE PERSONAL -->
-
-  <div id="bloque_contacto" class="disappear">
-
-    <div class="img_fondo fondo_contactos " id="image_top">
-      <div class="container ">
-        <p class="rotulo_imagen_fondo">SOBRE DERMASALUD</p>
-      </div>
-    </div>
-           <!-- <img class="img_fondo abs_position img_jumbo" src="./img/dermatologistsalary1158mod.jpg"> -->
-           <div class="container ">
-            
-            <div >
-            <hr>
-            <hr style="margin-top:-10px;">
-            </div>
-
-            <div class="row">
-
-              <div class="col-md-6" >
-                
-
-                <div style="display:block; position:relative; margin-top:50px;">
-                  <span class="medium-font" style="padding-right: 20px; position:relative;">Dirección:</span>
-                  <span class="medium-font left-align-text">
-                    C/ Concha Espina/ 43/ 3ºA</span>
-                    <br>
-                    <p class="medium-font left-align-text">Madrid. 28036.</p>
-                  
-
-                </div>
-
-                <h2 style="margin-top:50px;">
-                Cómo llegar:</h2>
-
-                <p style="margin-top:22px;">Que si metro cerca del Besdadssassafadd af ad aaf s fa  asf assf asf sa fsaff afs sffas snabeu, lineas de metro y autobus fdaf s fsfdf . Linea shahsgafgs... </p>
-
-                <p style="margin-top:20px;">Alternativamente asndsaj ahfjasshsd ahsj aj ahdaj rhajdjsahdhajfajhsasb sjd sjanfajjasf hhfjmajsjf haf gsgsgahs hBesdadssassafadd af ad aaf s fa  asf assf asf sa fsaff afs sffas snabeu, lineas de metro y autobus fdaf s fsfdf . Linea shahsgafgsgsahsfa abjawshdf jma. </p>
-
-
-                <hr>
-
-                <div style="display:block;">
-                  <span class="medium-font" style="padding-right: 20px;">Llamanos:</span>
-                  <span class="large-font">123 456 789</span>
-                </div>
-
-                <div style="display:block;">
-                  <span style="padding-right: 20px;" class="medium-font">Email:</span>
-                  <span  class="medium-font-bold">contacto@centromedicoconchaespina.es</span>
-                </div>
-
-
-              </div>
-              <div class="col-md-5 col-md-offset-1">
-                <div id="map-canvas">
-                </div>
-              </div>
-            </div>
-          </div>
-
-
-  </div>
 
 
 
@@ -737,7 +163,7 @@
 
   <!-- Begin Pie de pagina -->
 
-  <div class="expositor_pie_pagina"  style="margin-top:120px;">
+  <div class="expositor_pie_pagina"  style="margin-top:120px;" id="pie">
     <div class="container" >
       <div class="row" style="padding-top:20px; padding-bottom:40px;" style="position:relative; top:-20px">
         <h2>Información de Contacto:</h2>

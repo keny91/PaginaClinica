@@ -4,6 +4,28 @@
 
 <html>
 
+<script type="text/javascript">
+
+function initialize() {
+    var myLatlng = new google.maps.LatLng(40.451846,-3.687233);
+    var mapOptions = {
+      center: myLatlng,
+      zoom: 17,
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+    }
+    var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+
+    var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Centro médico Concha Espina'});
+  }
+  
+  //map = new google.maps.Map(document.getElementById("map_canvas"), { mapTypeId: google.maps.MapTypeId.ROADMAP });
+  google.maps.event.addDomListener(window, 'load', initialize());
+
+
+</script>
 
 <body>
 
@@ -11,7 +33,7 @@
 
     <div class="img_fondo fondo_contactos " id="image_top">
       <div class="container ">
-        <p class="rotulo_imagen_fondo">SOBRE DERMASALUD</p>
+        <p class="rotulo_imagen_fondo">Donde Estamos</p>
       </div>
     </div>
            <!-- <img class="img_fondo abs_position img_jumbo" src="./img/dermatologistsalary1158mod.jpg"> -->
@@ -22,7 +44,7 @@
             <hr style="margin-top:-10px;">
             </div>
 
-            <div class="row">
+            <div class="row legible">
 
               <div class="col-md-6" >
                 
