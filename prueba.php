@@ -1,54 +1,20 @@
-<html lang="es">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Contact tab.">
-    <meta name="author" content="Luis Herranz, Carmen Alonso">
-    <meta http-equiv="content-language" content="es"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>DermaSalud</title>
+El día 10 de Abril contratamos una línea de teléfono + ADSL de 12Mb. A día de hoy todavía no se nos ha asignado aun una fecha para la instalación. El plazo máximo para la instalación ha sido demorado en multiples ocasiones y sin ningún tipo de notificación. A base de múltiples llamadas averiguamos que se pospuso, primero al 14 de Mayo (34 días desde la contratación) y hoy he llamado para conocer el nuevo plazo máximo y se me ha notificado la fecha del 8 de Junio (2 meses tras la contratación).
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/general.css"/>
+Debo añadir que nuestro contrato iba a ser inicialmente con Movistar. Pero debido a la huelga de instaladores lo CANCELAMOS y hicimos un nuevo contrato con Jazztel; esto se debe a que un comercial nos GARANTIZÓ que no ibamos a estar afectados por la demora que estaba afectando a otros operadores. Este mismo personaje (su nombre era Juan y se encontraba en Valladolid) nos confirmó que nuestra instalación se haría en el plazo máximo de 15 días acorde a vuestra política de instalación.
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+Somos un centro médico  que pretendía empezar a funcionar en un par de semanas tras la contratación. La carencia de línea de teléfono propia nos esta ocasionando pérdidas muy cuantiosas, que esperamos indemnicéis y también que aceleréis la instalación (quedan 20 días hasta el 8 de junio).
+
+FUNDAMENTOS DE DERECHOS:
+
+Por la presente, y según el Real Decreto 899/2009, de 22 de mayo, por el que se aprueba la carta de derechos del usuario de los servicios de comunicaciones electrónicas, reconoce en el apartado e) del artículo 3 a los usuarios finales de servicios de comunicaciones electrónicas el derecho a la continuidad del servicio, y a una compensación en caso de interrupciones.
+
+Según el mismo decreto, la mercantil ha de responder de todos los posibles daños derivados del corte de suministro en la prestación de sus servicios, indemnización distinta  a las descritas en los puntos anteriores, tal y como recoge el artículo 18 del Real Decreto 899/2009.
+
+Si no se nos compensara como es debido nos veremos obligados a tomar acciones legales tanto extrajudiciales y judiciales que en derecho le correspondan.
 
 
+Un saludo
 
-  </head>
-  <body>
-
- <div class="img_fondo_info">
-      <!-- <img class="img_fondo abs_position img_jumbo" src="./img/dermatologistsalary1158mod.jpg"> -->
-      <div class="container ">
-        <p class="bottom-align">SOBRE DERMASALUD</p>
-
-        <!-- <p>This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.</p> -->
-        <!-- <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more &raquo;</a></p> -->
-      </div>
-    </div>
-
-
-<?php
- include("index.html")
-?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </body>
+Centro Médico Concha Espina
+Pedro herranz pinto
+p.p. 
