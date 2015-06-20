@@ -109,9 +109,15 @@ body{
 	background-size: cover;
 }
 .fondo_conocenos{
-	background: url(../img/img_fondo/imagen_fondo_personal.jpg);
+	background: url(../img/img _fondo/imagen_fondo_personal.jpg);
 	background-size: cover;
 }
+
+.fondo_conocenos2{
+	background: url(../img/img _fondo/imagen_fondo_personal2.jpg);
+	background-size: cover;
+}
+
 
 
 .list_tratamientos li{
@@ -508,7 +514,7 @@ div.footer_color{*/
   }
 
 
-a.opacity_50to100{
+a.opacity_50to100 , .opacity_50to100{
 
 	color: #FFF;
     /*filter: alpha(opacity=50);  */
@@ -517,7 +523,7 @@ a.opacity_50to100{
 	
 	}
 
-a.opacity_50to100:hover{
+a.opacity_50to100:hover , .opacity_50to100:hover{
     opacity: 1;
     transition: opacity 800ms;
     filter: alpha(opacity=50);  
