@@ -168,7 +168,7 @@ function load_contacto(){
 
 function load_conocenos(){
 
-  $('#contenedor_bloques').load('./html/conocenos.html');
+  $('#contenedor_bloques').load('./html/conocenos.html#fig');
   clickConocenos();
 
 }
