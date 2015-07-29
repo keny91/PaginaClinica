@@ -51,7 +51,7 @@ body{
 	top: 0;
 	left: 0;
 
-	height: 400px;
+	height: 500px;
 	
 	/*background-size: cover;*/
 	/*background-repeat: fixed;*/
@@ -94,6 +94,7 @@ body{
     margin-left: 12px;
 }
 
+
 .color-container h2 {
     text-align: center;
     padding-bottom: 5px;
@@ -101,17 +102,17 @@ body{
 }
 
 .fondo_contactos{
-	background: url(../img/img_fondo/imagen_fondo_contacto.jpg);
+	background: url(../img/img_fondo/despacho1_1fix.JPG);
 	background-size: cover;
 }
 
 .fondo_home{
-	background: url(../img/dermatologistsalary1158mod.jpg);
+	background: url(../img/img_fondo/entrada_fix.jpg);
 	background-size: cover;
 }
 
 .fondo_tratamientos{
-	background: url(../img/img_fondo/imagen_fondo_tratamientos.jpg);
+	background: url(../img/img_fondo/despacho1_2fix.jpg);
 	background-size: cover;
 }
 .fondo_conocenos{
@@ -262,7 +263,7 @@ body{
 
 .single_image{
 
-	position: absolute;
+	position: relative;
 	top: 60px;
 	left: 90px;
 	width: 400px;
@@ -286,7 +287,10 @@ body{
 	opacity: 0.7;
 }
 
+.white_font{
 
+	color: #E3E3E3;
+}
 .rotulo_remark{
 	position: relative;
 	background-color: rgba(60, 60, 100, 0.6);
