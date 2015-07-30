@@ -159,6 +159,31 @@ function load_tratamientos_laser(){
   clickTratamientos();
 }
 
+function load_tratamientos_Dgeneral(){
+
+  $("#contenedor_bloques").load("./html/tratamientos.html");
+  clickTratamientos();
+}
+
+function load_tratamientos_Destetica(){
+
+  $("#contenedor_bloques").load("./html/tratamientos/derm_estetica.html");
+  clickTratamientos();
+}
+
+function load_tratamientos_Dpediatrica(){
+
+  $("#contenedor_bloques").load("./html/tratamientos/derm_pediatrica.html");
+  clickTratamientos();
+}
+
+function load_tratamientos_cirugiaDerm(){
+
+  $("#contenedor_bloques").load("./html/tratamientos/cirugiaDerm.html");
+  clickTratamientos();
+}
+
+
 function load_contacto(){
 
   $('#contenedor_bloques').load('./html/contacto.html');
