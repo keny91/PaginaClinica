@@ -161,7 +161,7 @@ function load_tratamientos_laser(){
 
 function load_tratamientos_Dgeneral(){
 
-  $("#contenedor_bloques").load("./html/tratamientos.html");
+  $("#contenedor_bloques").load("./html/tratamientos/derm_general.html");
   clickTratamientos();
 }
 
