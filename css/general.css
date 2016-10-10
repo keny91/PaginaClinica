@@ -13,6 +13,13 @@ body{
 
 	font-family: arial;
 }
+ç
+
+.map-can{
+	border-color: #434381;
+	border-width: 2pt;
+	border-style: solid;
+}
 
 /*END FONTS*/
 .navbarcontainer{
@@ -138,8 +145,8 @@ body{
 
 .doc_row{
 	position: relative;
-	top: 90px;
-	margin-top: 70px;
+	top: 0px;
+	margin-top: 40px;
 }
 
 
