@@ -11,7 +11,7 @@
 
 body{
 
-	font-family: Colaborative;
+	font-family: arial;
 }
 
 /*END FONTS*/
@@ -20,15 +20,25 @@ body{
 	width: inherit;
 	height: 100px;
 	background-color: blue;
+}
+
+.portait_size{
+	/*width: 100%;*/
+	height: 410px;
 
 }
+
+.blue_font{
+	color: #2C5986;
+}
+
 .over_navbar{
 	/*vertical-align: center;*/
 	width: 100%;
 	height: 100px;
 
 	background-color: rgba(95, 161, 192, 0.61);
-	background: url(../img/fondo_logo.jpg);
+	background: url(../img/fondo_logo2.jpg);
 	background-size: 100% auto;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -45,7 +55,7 @@ body{
 	top: 0;
 	left: 0;
 
-	height: 400px;
+	height: 500px;
 	
 	/*background-size: cover;*/
 	/*background-repeat: fixed;*/
@@ -78,31 +88,106 @@ body{
 	
 }
 
+.color-container{
+	height: 264px;
+
+}
+
+.color-container p{
+   
+    margin-left: 12px;
+}
+
+
+.color-container h2 {
+    text-align: center;
+    padding-bottom: 5px;
+    margin-left: -12px;
+}
+
 .fondo_contactos{
-	background: url(../img/sample3.jpg);
+	background: url(../img/img_fondo/despacho1_1fix.JPG);
 	background-size: cover;
 }
 
 .fondo_home{
-	background: url(../img/dermatologistsalary1158mod.jpg);
+	background: url(../img/img_fondo/entrada_fix.jpg);
 	background-size: cover;
 }
 
 .fondo_tratamientos{
-	background: url(../img/sample3.jpg);
+	background: url(../img/img_fondo/despacho1_2fix.jpg);
 	background-size: cover;
 }
 .fondo_conocenos{
-	background: url(../img/sample3.jpg);
+	background: url(../img/img _fondo/imagen_fondo_personal.jpg);
 	background-size: cover;
 }
+
+.fondo_conocenos2{
+	background: url(../img/img _fondo/imagen_fondo_personal2.jpg);
+	background-size: cover;
+}
+
 
 
 .list_tratamientos li{
 	font-size: 20pt;
 
-
 }
+
+.doc_row{
+	position: relative;
+	top: 90px;
+	margin-top: 70px;
+}
+
+
+/*Fade on load*/
+
+#wrapper_bloc {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 2s; /* Firefox < 16 */
+        -ms-animation: fadein 2s; /* Internet Explorer */
+         -o-animation: fadein 2s; /* Opera < 12.1 */
+            animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+
 
 .triple_image_container{
 
@@ -150,7 +235,7 @@ body{
 
 }
 
-.first_plane_img{
+.first_plane_img_bot_left{
 
 	position: absolute;
 	top: 190px;
@@ -165,6 +250,35 @@ body{
 	
 }
 
+.first_plane_img_top_right{
+
+	position: absolute;
+	top: 190px;
+	left: 40px;
+	width: 180px;
+    height: 125px;
+
+    /*background-color: yellow;*/
+    /*rgba(95, 161, 192, 0.61)*/
+    /*box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.61);*/
+    overflow: inherit;
+	
+}
+
+.single_image{
+
+	position: relative;
+	top: 60px;
+	left: 90px;
+	width: 400px;
+    height: 250px;
+
+    /*background-color: yellow;*/
+    /*rgba(95, 161, 192, 0.61)*/
+    /*box-shadow: 10px -10px 5px rgba(0, 0, 0, 0.61);*/
+    /*overflow: inherit;*/
+
+}
 
 .on_top{
 	z-index: 100;
@@ -177,10 +291,13 @@ body{
 	opacity: 0.7;
 }
 
+.white_font{
 
+	color: #E3E3E3;
+}
 .rotulo_remark{
 	position: relative;
-	background-color: rgba(30, 60, 100, 0.6);
+	background-color: rgba(60, 60, 100, 0.6);
 	margin-top: 50px;
 	padding: 10px 50px 10px 30px;
 	padding-right: 0px;
@@ -200,7 +317,7 @@ body{
 	/*top: -10px;*/
 	
 	bottom: -20px;
-	padding: 10px 20px 10px 0px;
+	padding: 10px 15px 15px 15px;
 	font-family: arial;
 	font-size: 40pt;
 	font-weight: bold;	
@@ -226,7 +343,7 @@ body{
 .rotulo1{
 	padding-top: 70px;
 	/*font-family: arial;*/
-	font-size: 56pt;
+	font-size: 40pt;
 	font-weight: 700;
 	/*vertical-align: left;*/
 	padding-bottom: 20px;
@@ -234,9 +351,8 @@ body{
 
 .rotulo2{
 	position: relative;
-	top: -75px;
-	/*	font-family: arial thin;*/
-	font-size: 56pt;
+	top: -40px;
+	font-size: 30pt;
 	font-weight: 700;
 	padding-bottom: 20px;
 }
@@ -411,7 +527,7 @@ div.footer_color{*/
   }
 
 
-a.opacity_50to100{
+a.opacity_50to100 , .opacity_50to100{
 
 	color: #FFF;
     /*filter: alpha(opacity=50);  */
@@ -420,7 +536,7 @@ a.opacity_50to100{
 	
 	}
 
-a.opacity_50to100:hover{
+a.opacity_50to100:hover , .opacity_50to100:hover{
     opacity: 1;
     transition: opacity 800ms;
     filter: alpha(opacity=50);  
@@ -683,3 +799,35 @@ figure.effect:hover .trophy {
     transition: opacity 800ms;
     filter: alpha(opacity=50);  
   }
+
+
+
+/*Bootstrap Reajustments*/
+
+.color-container p a{	
+	color: #454545;
+	font-size: 12pt;
+	padding-top: 5px;
+	padding-left: 20px;
+	font-weight: bold;
+	}
+
+.color-container p a:hover{	
+	color: #000;
+	font-size: 12pt;
+
+	
+	}
+
+
+.legible p{
+
+	font-family: arial;
+	font-size: 14pt;
+}
+
+.legible_arial{
+
+	font-family: arial;
+
+}
